@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD </title>
+    <link rel="stylesheet" href="styles.css">
+ 
+
+  </head>
+  <body>
+    <div class="header">
+        <h1>Crud in Html
+            <small>
+                not local storage
+            </small>
+        </h1>
+    </div>
+    <div class="card">
+        <div class="forms">
+            <form autocomplete="on" onsubmit="onFormSubmit()">
+                <div>
+                    <label  for="CodigoAl"> Nombre de la escuela: </label>
+                    <br>
+                    <input class="entries" type="text"  id="nomEsc" >
+                </div>
+                <div>
+                    <label for="Alumno"> Direccion: </label>
+                    <br>
+                    <input class="entries" type="text"  id="direction" >
+                </div>
+                <div>
+                    <label for="Grado"> Codigo postal: </label>
+                    <br>
+                    <input class="entries" maxlength="5" type="number"   id="cp" >
+                </div>
+                <div>
+                    <label for="Grupo"> Clave: </label>
+                    <br>
+                    <input class="entries" maxlength="10" type="text" id="key">
+                </div>
+                <div class="Botones">
+                    <input type="submit" class="agregar" value="Agregar" id="agregar">
+                </div>
+            </form>
+        </div>
+        <div class="results">
+            <td>
+                <table class="lista" id="Encabezados">
+                    <thead>
+                        <tr>
+                            <th> Nombre de la escuela </th>
+                            <th> Direccion </th>
+                            <th> C.P </th>
+                            <th> Clave </th>
+                            <th> Editar / Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </td>
+        </div>
+    </div>
+    
+    <script src="script.js"> </script>
+
+   
+    
+  </body>
+</html>
+
